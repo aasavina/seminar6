@@ -57,10 +57,7 @@ def f5():
     return ls
 
 
-arr = np.array([i for i in range(100)])
-arr1 = [i for i in range(100)]
-arr2 = (i for i in range(100))
-arr3 = {i for i in range(100)}
+
 
 f()
 f1()
@@ -76,7 +73,4 @@ print("Size 3 = {} bytes".format(sys.getsizeof(f3)))
 print("Size 4 = {} bytes".format(sys.getsizeof(f4)))
 print("Size 5 = {} bytes".format(sys.getsizeof(f5)))
 
-print("Size numpy arr = {} bytes".format(sys.getsizeof(arr)))
-print("Size список arr = {} bytes".format(sys.getsizeof(arr1)))
-print("Size кортеж arr = {} bytes".format(sys.getsizeof(arr2)))
-print("Size словарь arr = {} bytes".format(sys.getsizeof(arr3)))
+# Все способы создания списка требуют одинаковую память
