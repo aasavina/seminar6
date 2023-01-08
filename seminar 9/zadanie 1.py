@@ -20,7 +20,7 @@
 
 def division(first_obj, second_obj):
     try:
-        return first_obj/second_obj
+        return first_obj*second_obj
     except ZeroDivisionError:
         return "Пытаетесь делить на 0!"
 
@@ -35,7 +35,7 @@ except ValueError:
 
 def assert_na_nol():
     """Сравнение чисел"""
-    assert division(first_numb, second_numb)==first_numb*second_numb,"все ок"
+    assert division(first_numb, second_numb)==first_numb/second_numb,"ошибка в функции"
 
 
 assert_na_nol()
