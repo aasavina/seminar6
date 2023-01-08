@@ -7,8 +7,14 @@ def my_func():
     res = x ** y
     return res
 
+def test_fy_func():
+    assert my_func()>0
+test_fy_func()
 
-print(f'Рузультат - {my_func()}')
+
+
+
+print(f'Результат - {my_func()}')
 
 
 def my_func2():
@@ -22,7 +28,7 @@ def my_func2():
     return res
 
 
-print(f'Рузультат - {my_func2()}')
+print(f'Результат - {my_func2()}')
 
 print(timeit("my_func()", globals=globals(), number=100000))
 print(timeit("my_func2()", globals=globals(), number=100000))
